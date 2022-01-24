@@ -75,10 +75,11 @@ void square(){
 void prime_number(){
 
     system("@cls||clear");
-    int i, aux = 0, number1;
+    int i, aux = 0;
+    long long int number1;
 
     printf("Enter a number: ");
-    scanf("%lf", &number1);
+    scanf("%lld", &number1);
 
     for (i = 1; i <= number1; i++){
 
@@ -97,8 +98,8 @@ void prime_number(){
 void allprime_number(){
 
     system("@cls||clear");
-    long long int number;
     int i, n, nprime = 0, aux = 0;
+    long long int number;
 
     printf("Enter a number: ");
     scanf("%lld", &number);
@@ -130,9 +131,8 @@ void allprime_number(){
 void allsquare(){
 
     system("@cls||clear");
-    double number;
+    double number, square;
     int n, i;
-    float square;
 
     printf("Enter a number: ");
     scanf("%lf", &number);
@@ -189,6 +189,8 @@ int main(void){
                 break;
 
             case (9):
+                system("@cls||clear");
+                printf("Leaving...\n\n");
                 break;
 
             default:
@@ -196,7 +198,6 @@ int main(void){
                 break;
         }
     }
-
     return 0;
     getch();
 }
